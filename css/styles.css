@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Lato Light;
+    src: url("../fonts/Lato-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Big Shoulders Text;
+    src: url("../fonts/BigShouldersText-Regular.ttf") format("truetype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+    overflow-x: hidden;
+}
+
+html, body{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+header {
+    background: teal;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Big Shoulders Text;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+header > *{
+    display: inline-block;
+}
+
+.aa {
+    padding: 0 10px;
+    display: none;
+}
+
+.aa.see{
+    display: inline-block;
+}
+
+button#close_it{
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.to-do-list {
+    margin-left: 0%;
+}
+
+.to-do-list.see{
+    margin-left: -100%;
+}
+
+.new-to-do {
+    margin-right: -100%;
+}
+
+.new-to-do.see{
+    margin-right: 0%;
+}
+
+.blocks {
+    width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 5px 5px 1px;
+}
+
+ul li{
+    border-bottom: thin solid #cce;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+ul li.header{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: Lato Light;
+    border-bottom: thin solid #aae;
+}
+
+ul li button{
+    border: none;
+    background: #fff;
+    outline: none;
+    margin: 2px 5px;
+}
+
+ul li button.edit{
+    background: #fff;
+    color: goldenrod;
+}
+
+ul li button.complete{
+    background: #fff;
+    color: seagreen;
+}
+
+ul li button.cancel{
+    background: #fff;
+    color: firebrick;
+}
+
+.add-form{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: Big Shoulders Text;
+}
+
+.add-form > *{
+    display: block;
+    text-align: center;
+}
+
+.add-form button{
+    width: 30%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 2px auto;
+    font-size: 18px;
+}
+
+input, textarea{
+    border-radius: 0;
+    border: none;
+    border-bottom: thin solid #aae;
+    padding: 5px !important;
+    width: 80% !important;
+    margin: 0px auto;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+textarea{
+    height: 60vh;
+    max-height: 60vh;
+    min-height: 60vh;
+    resize: none;
+    text-align: left !important;
+}
+
+input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus, button:hover, button:active, button:focus{
+    outline: none;
+}
+
+.add-form textarea{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.list_add {
+    background: teal;
+    font-family: Lato Light;
+    border-radius: 4px;
+}
+
+button.fab{
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: teal;
+    padding: 25px 25px 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+}
+
+button.fab.see{
+    display: none;
+}
